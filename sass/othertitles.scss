@@ -1,14 +1,23 @@
 @import 'colors';
 
+//  a standard mixin with secondaryColor imported from colors
 @mixin secondaryTitleMixin {
     color: $secondaryColor;
     font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+//  passing variables to mixins
 @mixin bordered($color, $width) {
     border: $width solid $color;
 }
+
+//  mixins can also include other mixins
+@mixin tertiaryTitleMixin {
+    @include secondaryTitleMixin;
+    @include bordered($tertiaryColor, 5px );
+}
+
 
 
 /* 
