@@ -1,0 +1,42 @@
+/*
+Sass Partials 
+
+omit underscore when being imported
+*/
+/*
+Sass Partials 
+
+omit underscore when being imported
+*/
+/* 
+A mixin can just have the values
+
+*/
+.titletext {
+  color: #b3ff00;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+}
+
+.secondaryTitle {
+  color: #ffee00;
+  font-size: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  background-color uses a sass function lighten which uses the 
+    variable primaryColor from colors
+*/
+.secondaryTitle2, .secondaryTitle3 {
+  color: #ffee00;
+  font-size: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #667dff;
+}
+
+body {
+  background-color: #0026ff;
+}
+
+/*# sourceMappingURL=index.css.map */

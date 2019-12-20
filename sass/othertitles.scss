@@ -1,0 +1,17 @@
+@import 'colors';
+
+@mixin secondaryTitleMixin {
+    color: $secondaryColor;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+}
+
+
+/* 
+A mixin can just have the values
+
+*/

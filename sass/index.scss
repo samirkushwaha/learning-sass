@@ -1,0 +1,40 @@
+@import "colors";
+@import 'othertitles';
+
+//  colors is a partial scss file
+//  othertitles is a mixin file
+
+//  titletextcolor is a variable
+$titletextcolor : #b3ff00;
+
+//  titletext class uses the titletextcolor variable for color
+.titletext {
+    color: $titletextcolor;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+}
+
+//  secondaryTitle has the style defined in secondaryTitleMixin
+.secondaryTitle {
+    @include secondaryTitleMixin;
+}
+
+//  secondaryTitle2 includes secondaryTitleMixin but also its own style
+/*  background-color uses a sass function lighten which uses the 
+    variable primaryColor from colors
+*/
+.secondaryTitle2 {
+    @include secondaryTitleMixin;
+    background-color: lighten($color: $primaryColor, $amount: 20);
+    
+}
+
+.secondaryTitle3 {
+    @extend .secondaryTitle2;
+
+}
+
+body {
+    background-color: $primaryColor;
+}
