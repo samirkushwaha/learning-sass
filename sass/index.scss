@@ -32,6 +32,7 @@ $titletextcolor : #b3ff00;
 
 .secondaryTitle3 {
     @extend .secondaryTitle2;
+    @include bordered(red, 5px);
 
 }
 
